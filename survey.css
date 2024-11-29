@@ -1,0 +1,68 @@
+body {
+  padding: 20px;
+  color: #f5f6f7;
+  font-family: sans-serif;
+  min-height:50%;
+  min-height: 50%;
+  background: url(https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9udXR8ZW58MHx8MHx8fDA%3D) rgba(115, 75, 175, 100%);
+  /*image from Unsplash*/
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: #2A2a40CC;
+  background-color: #2A2a40CC;
+  border-radius: 10px;
+}
+
+label {
+  display: inline-block;
+  margin: 0.5rem 0;
+  margin-bottom: 10px;
+}
+
+input, textarea, select {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height:2em;
+  border: 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="Submit"] {
+  display: block;
+  height: 3em;
+  font-size: 1.1em;
+  color: white;
+  background-color: #570987;
+  text-align: center;
+  width: 445px;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+}
+
+#name-label, #email-label, #number-label {
+  margin-left: 15px;
+}

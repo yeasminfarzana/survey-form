@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doughnut Lovers Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Title -->
+    <h1 id="title">Are you a Doughnut Lover?</h1>
+    <!-- Paragraph -->
+    <p id="description"><em>Thank you for taking the time to help us improve our Doughnuts!</em></p>
+    <form id="survey-form" method="post">
+    <!-- Fieldset Main-->
+    <fieldset>
+      <!-- Name, Email, Age -->
+      <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+      <br>
+      <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required></label>
+      <br>
+      <label for="number" id="number-label">Age (optional)<input id="number" type="number" name="number" min="10" max="99" placeholder="Age"></label>
+      <!-- 1st Fieldset  -->
+      <fieldset>
+        <label for="dropdown">Which doughnut is your favourite?
+          <select id="dropdown" name="dropdown">
+            <option value="">Select flavour</option>
+            <option value="1">Sugar sugar Doughnut</option>
+            <option value="2">Mochi Doughnut</option>
+            <option value="3">Raspberry Jam Doughnut</option>
+            <option value="4">Chocolate Hazelnut Doughnut</option>
+            <option value="5">Other</option></select>
+            </label>
+            </fieldset>
+    <!-- 2nd fieldset -->
+    <fieldset>
+      <legend id="l1">Would you recommend Doughnut Lover? 
+    </legend>
+    <div class="control"><label for="definitely"><input id="definitely" type="radio" name="recommend" class="inline" value="definitely" checked>Definitely</label>
+    </div>
+    <div class="control"><label for="maybe"><input id="maybe" type="radio" name="recommend" class="inline" value="maybe" checked>Maybe</label>
+    </div>
+    <div class="control"><label for="not-sure"><input id="not-sure" type="radio" name="recommend" class="inline" value="not-sure" checked>Not sure</label>
+    </div>
+    </fieldset>
+      <!-- 3rd fieldset -->
+      <fieldset>
+        <label id="dropdown-2">What is your favorite topping?
+          <select id="dropdown-2" name="dropdown-2">
+        <option value="">Select an option</option>
+        <option value="a">Topping? Never!</option>
+        <option value="b">More chocolate, please...</option>
+        <option value="c">A rainbow of sprinklers</option>
+        <option value="d">Any frosting</option></select>
+    </label>
+    </fieldset>
+    <!-- 4th fieldset-->
+    <fieldset>
+      <legend id="l2">What else would you eat/drink at Doughnut Lover?</legend>
+    <div>
+      <input id="Coffee" type="checkbox" name="Coffee" value="eat" class="inline"><label for="Coffee">Coffee</label>
+      </div>
+            <div>
+              <input id="Tea" type="checkbox" name="eat" value="Tea" class="inline"><label for="Tea" class="inline">Tea</label>
+              </div>
+            <div>
+             <input id="Bubble Tea" type="checkbox" name="eat" value="Bubble Tea" class="inline"><label for="Bubble Tea">Bubble Tea</label>
+             </div>
+             <div>
+             <input id="Milkshake" type="checkbox" name="eat" value="Milkshake" class="inline"><label for="Milkshake">Milkshake</label>
+             </div> 
+            <div>
+              <input id="Pancakes" type="checkbox" name="eat" value="Pancakes" class="inline"><label for "Pancakes">Pancakes</label>
+              </div>
+            <div>
+              <input id="Crepes" type="checkbox" name="eat" value="Crepes" class="inline"><label for="Crepes">Crepes</label>
+              </div>
+            <div>
+              <input id="Waffles" type="checkbox" name="eat" value="Waffles" class="inline"><label for="Waffles">Waffles</label>
+              </div>
+             <div>
+              <input id="Gelato" type="checkbox" name="eat" value="Gelato" class="inline"><label for="Gelato" >Gelato</label>
+              </div>
+             </fieldset>
+      <!-- 5th fieldset-->
+      <fieldset>
+        <label for="comment">Any comment or suggestions?<textarea id="comment" rows="5" cols="60" placeholder="Enter your comment here..."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+        </fieldset>
+        </body>
+</html>
